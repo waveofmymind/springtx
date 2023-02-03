@@ -22,9 +22,9 @@ ORM이 변경되면, 기술마다 쓰이는 트랜잭션 방법이 다르기 때
 
 트랜잭션 메서드를 이용할 경우, 클래스를 분리해서 사용해야한다.
 
-[프록시 내부 호출 문제 1](https://waveofymymind.tistory.com/54)
+[프록시 내부 호출 문제 발생](https://waveofymymind.tistory.com/54)
 
-[프록시 내부 호출 문제 2](https://waveofymymind.tistory.com/55)
+[프록시 내부 호출 문제 ](https://waveofymymind.tistory.com/55)
 
 
 ### 테스트에서 Lombok 사용하기
