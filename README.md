@@ -26,6 +26,12 @@ ORM이 변경되면, 기술마다 쓰이는 트랜잭션 방법이 다르기 때
 
 [프록시 내부 호출 문제 ](https://waveofymymind.tistory.com/55)
 
+## 초기화 시점에서는 트랜잭션이 적용되지 않는다.
+
+@PostConstruct과 @Transactional을 함께 사용할 경우, 초기화 코드가 먼저 호출되기 때문이다.
+
+해결 방법은 @EventListner(ApplicationReadyEvent.class)로 초기화가 끝난 다음 호출하도록 해야한다.
+
 
 ### 테스트에서 Lombok 사용하기
 
