@@ -51,10 +51,20 @@ ORM이 변경되면, 기술마다 쓰이는 트랜잭션 방법이 다르기 때
 
 외부 트랜잭션 수행중, 내부 트랜잭션이 수행되어져야 할 경우, 외부 트랜잭션을 잠시 미뤄두고 내부 트랜잭션 먼저 수행한다.(인터셉트와 개념이 유사하다.)
 
+## 트랜잭션 전파 옵션 - REQUIRES_NEW
+
+> @Transactional(propagation=Propagation.REQUIRES_NEW)
+
+해당 옵션을 사용하면, 논리 트랜잭션을 분리해서 수행할 수 있다.
+
+[트랜잭션 전파 옵션 - REQUIRES_NEW](https://waveofmymind.tistory.com/61)
 
 
 
-### 테스트에서 Lombok 사용하기
+
+
+
+## 테스트에서 Lombok 사용하기
 
 dependencies 내에 추가
 
